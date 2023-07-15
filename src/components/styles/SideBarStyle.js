@@ -5,7 +5,7 @@ import styled from "styled-components"
 export const SideBarstyle = styled.div`
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #F8F9FA;
     width: 320px;
     height: 109vh;
@@ -15,21 +15,21 @@ export const SideBarstyle = styled.div`
 h5{
     color: var(--gray-gray-700, #2D3748);
 font-family: Helvetica;
-font-size: 16px;
+font-size: 14px;
 font-style: normal;
 font-weight: 700;
 line-height: 150%; /* 18px */
 margin-left: -45px;
-padding: 15px 0px 10px 0px;
+padding: 10px 0px 0px 0px;
 }
 
 `
 export const WrapSidebar = styled.div`
 display: flex ;
-margin-top: 20px;
+margin-top: 14px;
 align-items: center;
-width: 233.5px;
-height: 64px;
+width: 219.5px;
+height: 54px;
 padding-left: 20px;
 flex-shrink: 0;
 /* background-color: ${({bg}) => bg || 'none'}; */
@@ -40,16 +40,18 @@ box-shadow:${({bxshd}) => bxshd || 'none'};
 h1{
 color: #2D3748;
 font-family: Helvetica;
-font-size: 15px;
+font-size: 14px;
 font-style: normal;
 font-weight: 700;
 line-height: 150%; /* 21px */
 margin-left: 15px;
+width: 174px;
+
 }
 h3{
     color: var(--gray-gray-700, #2D3748);
 font-family: Helvetica;
-font-size: 14px;
+font-size: 12px;
 font-style: normal;
 font-weight: 700;
 line-height: 150%; /* 18px */
@@ -65,10 +67,10 @@ flex-shrink: 0;
 
 `
 export const WrapIcon = styled.div`
-width: 35px;
-height: 35px;
+width: 30px;
+height: 30px;
 flex-shrink: 0;
-border-radius: 15px;
+border-radius: 12px;
 background:${({bg}) => bg || 'var(--teal-teal-300, #4FD1C5)' };
 /* background: var(--teal-teal-300, #4FD1C5); */
 display: flex;
@@ -76,8 +78,9 @@ justify-content: center;
 align-items: center;
 
 img{
-    width:20px;
-    height:20px;
+    width:22px;
+    height:22px;
+   
 }
 `
 export const Text =styled.div`
@@ -88,6 +91,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 150%; /* 18px */
 padding-left: 15px;
+text-decoration: none;
 `
 export const SidebarFooter = styled.div`
 width: 218px;

@@ -1,10 +1,10 @@
 import React from 'react'
-import SideBar from '../SideBar'
+
 
 const Dashboard = () => {
   return (
     <div>
-          <SideBar/></div>
+          131313</div>
   )
 }
 

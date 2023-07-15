@@ -1,48 +1,49 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import SideBar from './components/SideBar';
+import SideBar from './components/pages/Sidebar/SideBar';
+import Tables from './components/pages/Tables';
+import Billing from './components/pages/Billing';
+import Profile from './components/pages/Profile';
+import SignIn from './components/pages/SignIn';
+import SignUp from './components/pages/SignUp';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+import Dashboard from './components/pages/Dashboard';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-<div>
-  <SideBar/>
-</div>
-  </React.StrictMode>
-);
+function App() {
+  return (
+    <div style={{display:'flex'}}>
+    <BrowserRouter>
+      <MainApp />  
+    </BrowserRouter>
+    </div>
+  );
+}
+
+function MainApp() {
 
 
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <MainApp />  
-//     </BrowserRouter>
-//   );
-// }
+  const tolocate = useLocation();
+  const loadingPage = tolocate.pathname === "/signin";
+  const loadingPage1 = tolocate.pathname === "/signup"
 
-// function MainApp() {
-//   const location = useLocation();
-  
-//   const loadingPage = location.pathname === "/trash";
-//   // const loadingPage1 = location.pathname === "/Dashboard";
+  return (
+    <React.Fragment>
+      {!loadingPage && <SideBar />}
 
-//   return (
-//     <React.Fragment>
-//       {!loadingPage && <SideBar /> }
-//       <Routes>
-//         <Route path="/dashboard" element={<Dashboard />} /> 
-//         <Route path="/accounting" element={<Accounting />} /> 
-//         <Route path="/transactions" element={<Transactions />} /> 
-//         <Route path="/report" element={<Report />} />
-//         <Route path="/agency" element={<Agency />} /> 
-//         <Route path="/settings" element={<Settings />} /> 
-//         <Route path="/trash" element={<Trash />} /> 
-//       </Routes>
+      <Routes>
+        <Route path="/" element={<Dashboard/>} /> 
+        <Route path="/tables" element={<Tables />} /> 
+        <Route path="/billing" element={<Billing />} /> 
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/signin" element={<SignIn />} /> 
+        <Route path="/signup" element={<SignUp />} /> 
+      </Routes>
       
-//     </React.Fragment>
-//   );
-// }
+      {!loadingPage1 && !loadingPage }
+    </React.Fragment>
+  )
+}
 
-// ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
