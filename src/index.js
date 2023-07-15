@@ -35,7 +35,7 @@ function MainApp() {
       <Routes>
         <Route path="/" element={<Dashboard/>} /> 
         <Route path="/tables" element={<Tables />} /> 
-        <Route path="/billing" element={<Billing />} /> 
+        <Route path="/billings" element={<Billing />} /> 
         <Route path="/profile" element={<Profile />} />
         <Route path="/signin" element={<SignIn />} /> 
         <Route path="/signup" element={<SignUp />} /> 

@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from './navbar/Navbar'
+import Footer from './footer/footer'
 
 const Tables = () => {
   return (
-    <div>Tables</div>
+    <div>
+         <Navbar/>
+    <Footer/>
+    </div>
   )
 }
 

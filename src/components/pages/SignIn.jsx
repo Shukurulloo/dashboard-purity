@@ -1,8 +1,11 @@
 import React from 'react'
+import Footer from './footer/footer'
 
 const SignIn = () => {
   return (
-    <div>SignIn</div>
+    <div>
+       <Footer/>
+    </div>
   )
 }
 

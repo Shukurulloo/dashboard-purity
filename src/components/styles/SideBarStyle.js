@@ -67,20 +67,18 @@ flex-shrink: 0;
 
 `
 export const WrapIcon = styled.div`
-width: 30px;
-height: 30px;
+width:${({wd}) => wd || '30px'};
+height:${({ht}) => ht || '30px'};
 flex-shrink: 0;
 border-radius: 12px;
 background:${({bg}) => bg || 'var(--teal-teal-300, #4FD1C5)' };
-/* background: var(--teal-teal-300, #4FD1C5); */
 display: flex;
 justify-content: center;
 align-items: center;
+margin-right:${({mgrht}) => mgrht || '0px'};
 
 img{
-    width:22px;
-    height:22px;
-   
+color: white;
 }
 `
 export const Text =styled.div`
@@ -90,7 +88,7 @@ font-size: 13px;
 font-style: normal;
 font-weight: 700;
 line-height: 150%; /* 18px */
-padding-left: 15px;
+padding-left:${({pdlft}) => pdlft || '15px'};
 text-decoration: none;
 `
 export const SidebarFooter = styled.div`

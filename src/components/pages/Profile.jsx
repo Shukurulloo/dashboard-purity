@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from './navbar/Navbar'
+import Footer from './footer/footer'
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <div>   
+      <Navbar/>
+    <Footer/>
+    </div>
   )
 }
 

@@ -2,14 +2,6 @@ import React from 'react'
 import {  SideBarstyle, SidebarFooter, Text, WrapIcon, WrapSidebar } from '../../styles/SideBarStyle'
 import creativeLogo from '../../assets/logo-creative-tim-blacksidebar.png'
 import Border from '../../border'
-// import house from '../../assets/house.svg'
-// import tables from '../../assets/charttables.png'
-// import billing from '../../assets/defaultbilling.png'
-// import rtl from '../../assets/defaultrtl.png'
-// import person from '../../assets/defaultprofile.png'
-// import SigmIn from '../../assets/defaultsignIn.png'
-// import rocket from '../../assets/sharprocket.png'
-// import question from '../../assets/circleQuestion.png'
 import { Link } from 'react-router-dom'
 import {FaFile, FaHome, FaQuestionCircle, FaRocket, FaWrench} from 'react-icons/fa';
 import { BsCreditCard2BackFill, BsFillBarChartFill, BsFillPersonFill } from 'react-icons/bs';
@@ -29,7 +21,7 @@ const SideBar = () => {
             <FaHome style={{color:'white'}}/> 
              {/* <img src={house} alt=""  /> */}
                  </WrapIcon>
-                  <Link to='/'><h3>Dashboard</h3></Link> 
+                  <Link to='/' style={{textDecoration:'none'}}><h3>Dashboard</h3></Link> 
         </WrapSidebar>
       
 
@@ -39,7 +31,7 @@ const SideBar = () => {
         <BsFillBarChartFill style={{color:'#4FD1C5'}}/>
             {/* <img src={tables} alt="" />  */}
         </WrapIcon>
-        <Link to='/tables'><Text>Tables</Text> </Link>
+        <Link to='/tables' style={{textDecoration:'none'}}><Text>Tables</Text> </Link>
         </WrapSidebar>
      
 
@@ -49,7 +41,7 @@ const SideBar = () => {
             {/* <img src={billing} alt="" />  */}
             <BsCreditCard2BackFill style={{color:'#4FD1C5'}}/>
         </WrapIcon>
-        <Link to='/billings'><Text>Billings</Text></Link>
+        <Link to='/billings' style={{textDecoration:'none'}}><Text>Billings</Text></Link>
         </WrapSidebar>
 
         <WrapSidebar> 
@@ -59,7 +51,7 @@ const SideBar = () => {
             {/* <img src={rtl} alt="" />  */}
             
         </WrapIcon>
-        <Link><Text>RTL</Text></Link>
+        <Link to='/rtl' style={{textDecoration:'none'}}><Text>RTL</Text></Link>
         </WrapSidebar>
         
         <h5>ACCOUNT PAGES</h5>
@@ -69,7 +61,7 @@ const SideBar = () => {
         <BsFillPersonFill style={{color:'#4FD1C5'}}/>
             {/* <img src={person} alt="" />  */}
         </WrapIcon>
-       <Link to='/profile'> <Text>Profile</Text></Link>
+       <Link to='/profile' style={{textDecoration:'none'}}> <Text>Profile</Text></Link>
         </WrapSidebar>
       
         <WrapSidebar> 
@@ -77,7 +69,7 @@ const SideBar = () => {
          <FaFile style={{color:'#4FD1C5'}}/>
             {/* <img src={SigmIn} alt="" />  */}
         </WrapIcon>
-       <Link to='/signin'> <Text>Sign In</Text> </Link>
+       <Link to='/signin' style={{textDecoration:'none'}}> <Text>Sign In</Text> </Link>
         </WrapSidebar>
 
         <WrapSidebar> 
@@ -85,12 +77,12 @@ const SideBar = () => {
               <FaRocket style={{color:'#4FD1C5'}}/>
             {/* <img src={rocket} alt="" />  */}
         </WrapIcon>
-        <Link to='/signup'><Text>Sign Up</Text></Link>
+        <Link to='/signup' style={{textDecoration:'none'}}><Text>Sign Up</Text></Link>
         </WrapSidebar>
 
         <SidebarFooter>
         <WrapIcon bg='var(--black-amp-white-white, #FFF)'style={{marginLeft:'20px'}}>
-        <FaQuestionCircle style={{}}/>
+        <FaQuestionCircle style={{color:'#4FD1C5'}}/>
             {/* <img src={question} alt="" />  */}
         </WrapIcon>
         <h1>Need help?</h1>
