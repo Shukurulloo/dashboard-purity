@@ -1,19 +1,25 @@
 import React from 'react'
 import Navbar from './navbar/Navbar'
 import Footer from './footer/footer'
-import { ContainerDt, Title, WrapDash, WrapDrid } from '../styles/DashboardStyle'
+import { ContainerDt, DivText, MidLeft, MidRight, MiniMid, Title,  WrapDash, WrapGrid, WrapImg, WrapMid, WrapMini, WrapMiniRight, WrapMinileft } from '../styles/DashboardStyle'
 import { Text, WrapIcon,} from '../styles/SideBarStyle'
-import { FaShoppingCart, FaWallet } from 'react-icons/fa'
+import { FaRocket, FaShoppingCart, FaWallet, FaWrench } from 'react-icons/fa'
 import { AiOutlineGlobal } from 'react-icons/ai'
-
+import { FiArrowRight } from "react-icons/fi";
+import chakra from '../assets/og-imagechakra.png'
+import graphic from '../assets/Graphgraphic.png'
+import progres from '../assets/Progress1.png'
+import progres2 from '../assets/Progress2.png'
+import progres3 from '../assets/Progress3.png'
+import sales from '../assets/Data.png'
 
 const Dashboard = () => {
   return (
     <ContainerDt>
     <Navbar/>
     <Title>Dashboard</Title>
-<WrapDrid>
-    <WrapDash>
+<WrapGrid style={{marginRight:'40px'}}>
+    <WrapDash >
       <div  style={{marginLeft:'20px'}}>
       <Text pdlft='0px'>Today’s Money</Text>
       <div style={{display:'flex', alignItems:'center'}}>
@@ -53,18 +59,100 @@ const Dashboard = () => {
       <div  style={{marginLeft:'20px'}}>
       <Text pdlft='0px'>Total Sales</Text>
       <div style={{display:'flex', alignItems:'center'}}>
+
       <Title fsize='18px' mg='0px 0px 0px 0px'>$173,000</Title>
       <p>+8%</p></div>
       </div>
+
       <WrapIcon wd='45px' ht='45px' mgrht='20px'>
       <FaShoppingCart style={{width:'22.5px',height:'22.5px', color:'white'}}/> 
       </WrapIcon>
     </WrapDash>
+      </WrapGrid>
 
-</WrapDrid>
+            <WrapGrid mjtp='20px' grdc='792px 620px'>
+            <WrapMini><WrapMinileft>
+            <div style={{flexDirection:'column', padding:'0px 0px 40px 20px',marginTop:'0px'}}>
+              <Text pdlft='0px'>Built by developers</Text>
+            <Title fsize='18px' mg='8px 0px 0px 0px'>Purity UI Dashboard</Title>
+            <p>From colors, cards, typography to complex elements,
+            you will find the full documentation.</p> </div>
+            <DivText><h5>Read more</h5>
+            <FiArrowRight/></DivText>
+            </WrapMinileft>
+            <WrapMiniRight>
+              <img src={chakra} alt="" />
+            </WrapMiniRight>
+            </WrapMini>
+
+            <WrapMini  lxdn='row' wd='580px'>
+              <WrapImg>
+              <Title fsize='18px' mg='8px 0px 0px 20px' clr='var(--black-amp-white-white, #FFF);'>Work with the Rockets</Title>
+              <p>Wealth creation is an evolutionarily recent positive-sum game. It is all about who take the opportunity first.</p>
+              <DivText mg='150px 0px 0px 20px'><h5 style={{color:'var(--black-amp-white-white, #FFF'}}>Read more</h5>
+            <FiArrowRight style={{color:'white'}}/></DivText>
+              </WrapImg>
+            </WrapMini> 
+            </WrapGrid>
+
+            <WrapMid>
+
+              <MidLeft>
+                <img src={graphic} alt="" style={{width:"620px"}} />
+             <div className='active'> 
+             <Title fsize='18px' mg='20px 0px 0px 0px'>Active Users</Title>
+              <Text pdlft='0px' fwt='400'><span style={{color: 'var(--green-green-400, #48BB78)'}}>(+23)</span> than last week</Text></div>
+
+              <WrapGrid mjtp='20px' grdc='70px 70px 70px 70px' gap='90px' style={{marginRight:'60px'}}>
+              <MiniMid ><div className='icons'>
+                <WrapIcon wd='25px' ht='25px' mgrht='10px' bdrds='7px'>
+              <FaWallet style={{width:'13.5px',height:'13.5px', color:'white'}}/> 
+              </WrapIcon> 
+              <Text pdlft='0px'>Users</Text>
+              </div>
+              <Title fsize='18px' mg='7px 0px -9px 0px'>32,984</Title>
+              <img src={progres} alt="" /></MiniMid>
+
+              <MiniMid>
+              <div className='icons'><WrapIcon wd='25px' ht='25px' mgrht='10px' bdrds='7px'>
+              <FaRocket style={{width:'13.5px',height:'13.5px', color:'white'}}/> 
+              </WrapIcon>
+              <Text pdlft='0px'>Clicks</Text></div>
+              <Title fsize='18px' mg='7px 0px -9px 0px'>2,42m</Title>
+              <img src={progres2} alt="" />
+              </MiniMid>
+              
+              <MiniMid>
+              <div className='icons'><WrapIcon wd='25px' ht='25px' mgrht='10px' bdrds='7px'>
+              <FaShoppingCart style={{width:'13.5px',height:'13.5px', color:'white'}}/> 
+              </WrapIcon>
+              <Text pdlft='0px'>Sales</Text></div>
+              <Title fsize='18px' mg='7px 0px -9px 0px'>2,400$</Title>
+              <img src={progres3} alt="" />
+              </MiniMid>
+
+              <MiniMid>
+              <div className='icons'><WrapIcon wd='25px' ht='25px' mgrht='10px' bdrds='7px'>
+              <FaWrench style={{width:'13.5px',height:'13.5px', color:'white'}}/> 
+              </WrapIcon>
+              <Text pdlft='0px'>Items</Text></div>
+              <Title fsize='18px' mg='7px 0px -9px 0px'>320</Title>
+              <img src={progres3} alt="" />
+              </MiniMid>
+              </WrapGrid>
+              </MidLeft>
+
+              <MidRight>
+              <Title fsize='18px' mg='20px 0px 0px 20px'>Sales overview</Title>
+              <Text pdlft='20px' fwt='400'><span style={{color: 'var(--green-green-400, #48BB78)'}}>(+5) more</span> in 2021</Text>
+                <img src={sales} alt="" />
+                </MidRight>
+            </WrapMid>
+            
+           
     <Footer/>
     </ContainerDt>
   )
 }
 
-export default Dashboard
+export default Dashboard 

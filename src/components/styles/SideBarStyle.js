@@ -70,7 +70,7 @@ export const WrapIcon = styled.div`
 width:${({wd}) => wd || '30px'};
 height:${({ht}) => ht || '30px'};
 flex-shrink: 0;
-border-radius: 12px;
+border-radius:${({bdrds}) => bdrds || '12px'};
 background:${({bg}) => bg || 'var(--teal-teal-300, #4FD1C5)' };
 display: flex;
 justify-content: center;
@@ -86,7 +86,7 @@ color: var(--gray-gray-400, #A0AEC0);
 font-family: Helvetica;
 font-size: 13px;
 font-style: normal;
-font-weight: 700;
+font-weight: ${({fwt}) => fwt || '700'};
 line-height: 150%; /* 18px */
 padding-left:${({pdlft}) => pdlft || '15px'};
 text-decoration: none;
