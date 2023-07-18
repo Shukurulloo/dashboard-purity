@@ -141,7 +141,7 @@ width: 100%;
 margin-top: 20px;
 align-items: center;
 justify-content: center;
-padding: 0px 10px 20px 10px;
+padding: 0px 30px 20px 10px;
 
 .icons{
     display: flex;
@@ -155,7 +155,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 height: 445px;
-flex: 2;
+flex: ${({flx}) => flx || "2"};
 flex-shrink: 0;
 margin:0px 20px;
 border-radius: 15px;
@@ -170,8 +170,8 @@ border-top-left-radius: 15px;
     padding-left: 20px;
     justify-content: flex-start;
 }
-img{
-    margin-top: 15px;
+.progress{
+    margin-top: 22px;
     
 
 }`
@@ -180,23 +180,21 @@ display: flex;
 margin-top:${({mjtp}) => mjtp || '20px'};
 margin-left:${({mglft}) => mglft || ''};
 width: 100%;
-padding:20px 30px 0px 0px
+padding:20px 20px 0px 0px
 
 `
 
 
 export const MidRight = styled.div`
-width: 716px;
 height: 445px;;
 flex-shrink: 0;
-flex: 3;
+flex: ${({flx}) => flx || "3"};
 border-radius: 15px;
 background: var(--black-amp-white-white, #FFF);
 box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px rgba(0, 0, 0, 0.02);
 display: flex;
 flex-direction: column;
 margin: 0px 0px 0px 0px;
-margin-right: 20px;
 
 img{
     width: 670px;

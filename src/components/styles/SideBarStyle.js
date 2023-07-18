@@ -8,7 +8,6 @@ export const SideBarstyle = styled.div`
     border: 1px solid red;
     background-color: #F8F9FA;
     width: 320px;
-    height: 109vh;
     align-items: center;
     
     /* justify-content: center; */
