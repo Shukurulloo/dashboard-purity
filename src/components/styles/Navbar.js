@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const NavbarStyle = styled.div`
 display: flex;
-width: 150vh;
+width: 100%;
 height: 75px;
 /* border: 1px solid black;    */
 background-color: #F8F9FA;

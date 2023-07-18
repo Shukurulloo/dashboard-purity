@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './navbar/Navbar'
 import Footer from './footer/footer'
-import { ContainerDt, DivText, MidLeft, MidRight, MiniMid, Title,  WrapDash, WrapGrid, WrapImg, WrapMid, WrapMini, WrapMiniRight, WrapMinileft } from '../styles/DashboardStyle'
+import { ContainerDt, DivText, Flex, Grid, MidLeft, MidRight, MiniMid, Title,  WrapDash, WrapData, WrapImg, WrapMid, WrapMini, WrapMiniRight, WrapMinileft } from '../styles/DashboardStyle'
 import { Text, WrapIcon,} from '../styles/SideBarStyle'
 import { FaRocket, FaShoppingCart, FaWallet, FaWrench } from 'react-icons/fa'
 import { AiOutlineGlobal } from 'react-icons/ai'
@@ -17,46 +17,46 @@ const Dashboard = () => {
   return (
     <ContainerDt>
     <Navbar/>
-    <Title>Dashboard</Title>
-<WrapGrid style={{marginRight:'40px'}}>
+    <div style={{width:'100%',display:'flex', justifyContent:'flex-start',}}><Title>Dashboard</Title></div>
+     <Grid>
     <WrapDash >
-      <div  style={{marginLeft:'20px'}}>
+      <div >
       <Text pdlft='0px'>Today’s Money</Text>
       <div style={{display:'flex', alignItems:'center'}}>
       <Title fsize='18px' mg='0px 0px 0px 0px'>$53,000</Title>
       <p>+55%</p></div>
       </div>
-      <WrapIcon wd='45px' ht='45px' mgrht='20px'>
+      <WrapIcon wd='45px' ht='45px' mgrht='0px'>
       <FaWallet style={{width:'22.5px',height:'22.5px', color:'white'}}/> 
       </WrapIcon>
     </WrapDash>
 
     <WrapDash>
-      <div  style={{marginLeft:'20px'}}>
+      <div>
       <Text pdlft='0px'>Today’s Users</Text>
       <div style={{display:'flex', alignItems:'center'}}>
       <Title fsize='18px' mg='0px 0px 0px 0px'>2,300</Title>
       <p>+5%</p></div>
       </div>
-      <WrapIcon wd='45px' ht='45px' mgrht='20px'>
+      <WrapIcon wd='45px' ht='45px' mgrht='0px'>
       <AiOutlineGlobal style={{width:'22.5px',height:'22.5px', color:'white'}}/> 
       </WrapIcon>
     </WrapDash>
 
     <WrapDash>
-      <div  style={{marginLeft:'20px'}}>
+      <div>
       <Text pdlft='0px'>New Clients</Text>
       <div style={{display:'flex', alignItems:'center'}}>
       <Title fsize='18px' mg='0px 0px 0px 0px'>+3,052</Title>
       <p style={{color:'red'}}>-14%</p></div>
       </div>
-      <WrapIcon wd='45px' ht='45px' mgrht='20px'>
+      <WrapIcon wd='45px' ht='45px' mgrht='0px'>
       <FaWallet style={{width:'22.5px',height:'22.5px', color:'white'}}/> 
       </WrapIcon>
     </WrapDash>
 
     <WrapDash>
-      <div  style={{marginLeft:'20px'}}>
+      <div>
       <Text pdlft='0px'>Total Sales</Text>
       <div style={{display:'flex', alignItems:'center'}}>
 
@@ -64,14 +64,16 @@ const Dashboard = () => {
       <p>+8%</p></div>
       </div>
 
-      <WrapIcon wd='45px' ht='45px' mgrht='20px'>
+      <WrapIcon wd='45px' ht='45px' mgrht='0px'>
       <FaShoppingCart style={{width:'22.5px',height:'22.5px', color:'white'}}/> 
       </WrapIcon>
     </WrapDash>
-      </WrapGrid>
+    </Grid>
 
-            <WrapGrid mjtp='20px' grdc='792px 620px'>
-            <WrapMini><WrapMinileft>
+
+            <Flex>
+            <WrapMini style={{flex:'3', marginRight:'20px'}}>
+              <WrapMinileft>
             <div style={{flexDirection:'column', padding:'0px 0px 40px 20px',marginTop:'0px'}}>
               <Text pdlft='0px'>Built by developers</Text>
             <Title fsize='18px' mg='8px 0px 0px 0px'>Purity UI Dashboard</Title>
@@ -85,7 +87,7 @@ const Dashboard = () => {
             </WrapMiniRight>
             </WrapMini>
 
-            <WrapMini  lxdn='row' wd='580px'>
+            <WrapMini  flxdn='row' wd='' style={{flex:'2', padding:'0px 20px'}}>
               <WrapImg>
               <Title fsize='18px' mg='8px 0px 0px 20px' clr='var(--black-amp-white-white, #FFF);'>Work with the Rockets</Title>
               <p>Wealth creation is an evolutionarily recent positive-sum game. It is all about who take the opportunity first.</p>
@@ -93,17 +95,17 @@ const Dashboard = () => {
             <FiArrowRight style={{color:'white'}}/></DivText>
               </WrapImg>
             </WrapMini> 
-            </WrapGrid>
+            </Flex>
 
             <WrapMid>
 
               <MidLeft>
-                <img src={graphic} alt="" style={{width:"620px"}} />
+                <img src={graphic} alt="" style={{ padding:'0px 0px 24px 0px', width:'560px'}} />
              <div className='active'> 
-             <Title fsize='18px' mg='20px 0px 0px 0px'>Active Users</Title>
+             <Title fsize='18px' mg='0px 0px 0px 0px'>Active Users</Title>
               <Text pdlft='0px' fwt='400'><span style={{color: 'var(--green-green-400, #48BB78)'}}>(+23)</span> than last week</Text></div>
 
-              <WrapGrid mjtp='20px' grdc='70px 70px 70px 70px' gap='90px' style={{marginRight:'60px'}}>
+              <WrapData mjtp='20px' grdc='70px 70px 70px 70px' gap='90px' style={{}}>
               <MiniMid ><div className='icons'>
                 <WrapIcon wd='25px' ht='25px' mgrht='10px' bdrds='7px'>
               <FaWallet style={{width:'13.5px',height:'13.5px', color:'white'}}/> 
@@ -139,7 +141,7 @@ const Dashboard = () => {
               <Title fsize='18px' mg='7px 0px -9px 0px'>320</Title>
               <img src={progres3} alt="" />
               </MiniMid>
-              </WrapGrid>
+              </WrapData>
               </MidLeft>
 
               <MidRight>

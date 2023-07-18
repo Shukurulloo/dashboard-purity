@@ -5,7 +5,7 @@ import styled from "styled-components"
 export const SideBarstyle = styled.div`
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     background-color: #F8F9FA;
     width: 320px;
     height: 109vh;

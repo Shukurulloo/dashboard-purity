@@ -20,13 +20,16 @@ margin:${({mg}) => mg || '-25px 30px 20px 30px'};
 `
 export const WrapDash = styled.div`
 display: flex;
-width: 332px;
+width: 100%;
 height: 80px;
+flex: 1;
+padding: 0px 20px;
+margin: 0px 10px 20px;
 flex-shrink: 0;
 border-radius: 15px;
 background: var(--black-amp-white-white, #FFF);
 box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px rgba(0, 0, 0, 0.02);
-justify-content: space-between;
+justify-content: space-between ;
 align-items: center;
 
 
@@ -40,27 +43,36 @@ line-height: 140%; /* 19.6px */
 padding-left: 7px;
 }
 
-`
-export const WrapGrid = styled.div`
-display: grid;
-grid-template-columns:${({grdc}) => grdc || '332px  332px 332px 332px '};
-gap:${({gap})  =>  gap || '20px'};
-margin-top:${({mjtp}) => mjtp || '20px'};
-margin-left:${({mglft}) => mglft || '40px'};
+
 `
 
+export const Grid = styled.div`
+display: flex;
+width: 100%;
+align-items: center;
+padding: 0px 20px;
+justify-content: space-around;
+`
+export const Flex = styled.div`
+display: flex;
+align-items: center;
+width: 100%;
+padding: 0px 30px;
+
+`
 export const WrapMini = styled.div`
 display: flex;
+margin-left: 0px;
 flex-direction:${({flxdn}) => flxdn || 'row'};
-width: ${({wd}) => wd || '792px'};
+width: ${({wd}) => wd || '100%'};
 height: 290.5px;
 flex-shrink: 0;
 border-radius: 15px;
+/* margin-right:20px; */
 align-items: center;
 justify-content: center;
 background: var(--black-amp-white-white, #FFF);
 box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px rgba(0, 0, 0, 0.02);
-
 p{
 color: var(--gray-gray-400, #A0AEC0);
 font-family: Helvetica;
@@ -76,14 +88,15 @@ padding-top: 8px;
 `
 export const WrapMinileft= styled.div`
 display: flex;
-flex: 1;
+flex: 3;
 flex-direction: column;
 `
 export const WrapMiniRight = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-flex: 1;
+flex: 2;
+padding-right: 20px;
 
 img{
     border-radius: 15px;
@@ -103,7 +116,7 @@ background-image: url(${bgimage});
 background-repeat:no-repeat;
 background-position:center;
 background-size:cover;
-width: 543px;
+width: 100%;
 height: 260px;
 border-radius: 12px;
 p{
@@ -124,11 +137,11 @@ margin-left:20px;
 
 export const WrapMid = styled.div`
 display: flex;
-/* flex-direction: column; */
 width: 100%;
 margin-top: 20px;
 align-items: center;
 justify-content: center;
+padding: 0px 10px 20px 10px;
 
 .icons{
     display: flex;
@@ -141,38 +154,49 @@ export const MidLeft = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 652px;
 height: 445px;
+flex: 2;
 flex-shrink: 0;
-/* margin-left: -40px; */
+margin:0px 20px;
 border-radius: 15px;
 background: var(--black-amp-white-white, #FFF);
 box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px rgba(0, 0, 0, 0.02);
+border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 .active{
     display: flex;
     flex-direction: column;
-    width: 400px;
-    margin-right: 220px;
-    display: flex;
-    align-items: flex-start;
+    width: 100%;
+    padding-left: 20px;
+    justify-content: flex-start;
 }
 img{
-    margin-top: 20px;
+    margin-top: 15px;
     
 
-}
+}`
+export const WrapData = styled.div`
+display: flex;
+margin-top:${({mjtp}) => mjtp || '20px'};
+margin-left:${({mglft}) => mglft || ''};
+width: 100%;
+padding:20px 30px 0px 0px
 
 `
+
+
 export const MidRight = styled.div`
 width: 716px;
 height: 445px;;
 flex-shrink: 0;
+flex: 3;
 border-radius: 15px;
 background: var(--black-amp-white-white, #FFF);
 box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px rgba(0, 0, 0, 0.02);
 display: flex;
 flex-direction: column;
-margin: 0px 0px 0px 20px;
+margin: 0px 0px 0px 0px;
+margin-right: 20px;
 
 img{
     width: 670px;
@@ -185,6 +209,9 @@ export const MiniMid= styled.div`
 display: flex;
 flex-direction: column;
 margin-top: 20px;
+flex:1;
+padding: 0px 20px;
+
 `
 
 // export const MidLeft = styled.div`
