@@ -14,6 +14,7 @@ display: flex;
 align-items: center;
 justify-content: flex-start;
 flex: 1;
+padding-left: 26px;
 p{
 color: var(--gray-gray-400, #A0AEC0);
 font-family: Helvetica;

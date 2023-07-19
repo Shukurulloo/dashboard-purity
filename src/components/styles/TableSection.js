@@ -7,7 +7,6 @@ export const TableStyle = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border: 2px solid yellow;
 
 `
 export const Wraptable = styled.div`
@@ -19,9 +18,9 @@ export const Wraptable = styled.div`
 .wrabtab{
     display: flex;
     flex: 1;
- 
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    padding-Left:20px;
     }
 h4{
     color: var(--gray-gray-400, #A0AEC0);
@@ -30,6 +29,7 @@ h4{
     font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 15px */
+  
 }
 h2{
     color: var(--gray-gray-700, #2D3748);
@@ -38,5 +38,6 @@ font-size: 14px;
 font-style: normal;
 font-weight: 700;
 line-height: 140%; /* 19.6px */
+padding-left: 10px;
 }
 `

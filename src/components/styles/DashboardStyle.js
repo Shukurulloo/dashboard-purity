@@ -174,7 +174,14 @@ border-top-left-radius: 15px;
     margin-top: 22px;
     
 
-}`
+}
+.tablediv{
+    display: flex;
+    width: 100%;    
+    justify-content: space-between;
+    padding:20px 15px 0 0;
+}
+`
 export const WrapData = styled.div`
 display: flex;
 margin-top:${({mjtp}) => mjtp || '20px'};

@@ -5,7 +5,7 @@ import { ContainerDt, DivText, Flex, Grid, MidLeft, MidRight, MiniMid, Title,  W
 import { Text, WrapIcon,} from '../styles/SideBarStyle'
 import { FaRocket, FaShoppingCart, FaWallet, FaWrench, FaCheckCircle} from 'react-icons/fa'
 import { AiOutlineGlobal } from 'react-icons/ai'
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiMoreVertical } from "react-icons/fi";
 import chakra from '../assets/og-imagechakra.png'
 import graphic from '../assets/Graphgraphic.png'
 import progres from '../assets/Progress1.png'
@@ -14,6 +14,7 @@ import progres3 from '../assets/Progress3.png'
 import progres4 from '../assets/Progress4.png'
 import sales from '../assets/Data.png'
 import TableSection from './table/TableSection'
+import OverView from './overViev/OverView'
 
 
 
@@ -159,17 +160,24 @@ const Dashboard = () => {
 
           <WrapMid>
             <MidLeft flx='4'>
+              <div className='tablediv'>
             <div className='active'> 
              <Title fsize='18px' mg='0px 0px 0px 0px'>Projects</Title>
               <Text pdlft='0px' fwt='400' >
                 <FaCheckCircle style={{margin:'0px 3px -1px 0px', color:'#68D391'}}/>
                 <span style={{fontWeight:'700'}}>30 done</span> than last week</Text>
                 </div>
+                <div><FiMoreVertical color='#A0AEC0'/></div>
+                </div>
                 <TableSection/>
             </MidLeft>
-            <MidRight flx='2'>
-          
 
+            <MidRight flx='2'>
+            <div className='active' style={{padding:'20px 0px 10px 20px'}}> 
+             <Title fsize='18px' mg='0px 0px 0px 0px'>Orders overview</Title>
+             <Text pdlft='0px' fwt='400'><span style={{color: 'var(--green-green-400, #48BB78)'}}>+30%</span> this month</Text>
+                </div>
+                <OverView/>
             </MidRight>
           </WrapMid>
            
