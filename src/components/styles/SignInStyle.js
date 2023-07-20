@@ -32,5 +32,5 @@ export const SigninLeft = styled.div`
    background-size:cover;
     height: 872px;
 
-    border-radius: 15px;
+    border-radius: 0 0 0 20px;
  `
