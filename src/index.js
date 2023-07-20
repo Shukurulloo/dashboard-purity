@@ -30,7 +30,7 @@ function MainApp() {
 
   return (
     <React.Fragment>
-      {!loadingPage && <SideBar />}
+      {!loadingPage && !loadingPage1 && <SideBar />}
 
       <Routes>
         <Route path="/" element={<Dashboard/>} /> 
@@ -41,7 +41,7 @@ function MainApp() {
         <Route path="/signup" element={<SignUp />} /> 
       </Routes>
       
-      {!loadingPage1 && !loadingPage }
+
     </React.Fragment>
   )
 }

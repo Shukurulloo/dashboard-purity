@@ -5,7 +5,7 @@ import { FooterLeft, FooterRight, FooterStyle } from '../../styles/FooterStyle'
 
 const Footer = () => {
   return (
-    <FooterStyle>
+    <FooterStyle >
         <FooterLeft> 
             <p>@ 2021, Made with <span style={{color:'red'}}>❤️</span> by <span className='simmple'> Creative Tim</span> & <span className='simmple'>Simmmple</span> for a better web</p>
     </FooterLeft>

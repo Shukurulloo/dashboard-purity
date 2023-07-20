@@ -11,7 +11,7 @@ export const TableStyle = styled.div`
 `
 export const Wraptable = styled.div`
     display: flex;
-    border-top: 1px solid darkgray;
+    border-top: 1px solid #E2E8F0;
     height: 52px;
     width: 100%;
 

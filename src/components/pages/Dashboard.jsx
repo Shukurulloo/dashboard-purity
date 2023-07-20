@@ -24,14 +24,17 @@ const Dashboard = () => {
   return (
     <ContainerDt>
     <Navbar/>
-    <div style={{width:'100%',display:'flex', justifyContent:'flex-start',}}><Title>Dashboard</Title></div>
+    <div style={{width:'100%',display:'flex', justifyContent:'flex-start',}}>
+      <Title>Dashboard</Title>
+      </div>
      <Grid>
     <WrapDash >
       <div >
       <Text pdlft='0px'>Today’s Money</Text>
       <div style={{display:'flex', alignItems:'center'}}>
       <Title fsize='18px' mg='0px 0px 0px 0px'>$53,000</Title>
-      <p>+55%</p></div>
+      <p>+55%</p>
+      </div>
       </div>
       <WrapIcon wd='45px' ht='45px' mgrht='0px'>
       <FaWallet style={{width:'22.5px',height:'22.5px', color:'white'}}/> 
@@ -43,7 +46,8 @@ const Dashboard = () => {
       <Text pdlft='0px'>Today’s Users</Text>
       <div style={{display:'flex', alignItems:'center'}}>
       <Title fsize='18px' mg='0px 0px 0px 0px'>2,300</Title>
-      <p>+5%</p></div>
+      <p>+5%</p>
+       </div>
       </div>
       <WrapIcon wd='45px' ht='45px' mgrht='0px'>
       <AiOutlineGlobal style={{width:'22.5px',height:'22.5px', color:'white'}}/> 
@@ -177,7 +181,7 @@ const Dashboard = () => {
              <Title fsize='18px' mg='0px 0px 0px 0px'>Orders overview</Title>
              <Text pdlft='0px' fwt='400'><span style={{color: 'var(--green-green-400, #48BB78)'}}>+30%</span> this month</Text>
                 </div>
-                <OverView/>
+                <OverView/> 
             </MidRight>
           </WrapMid>
            
