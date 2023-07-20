@@ -1,14 +1,19 @@
 import React from 'react'
 import { FooterLeft, FooterRight, FooterStyle } from '../styles/FooterStyle'
-import { WrapSignIn } from '../styles/SignInStyle'
+import { SigninLeft, SigninRight, WrapSignIn } from '../styles/SignInStyle'
+import SigninNavbar from './signInNavbar/SigninNavbar'
 
 const SignIn = () => {
   return (
     <WrapSignIn>
-<div className='left'></div>
-<div className='right'>
-      <div className='background1'></div>
-    <div  className='background2'></div>
+<div className='wrapCont'>
+  <SigninLeft>
+  <SigninNavbar/>
+  </SigninLeft>
+<SigninRight>
+      {/* <div className='background1'></div>
+    <div  className='background2'></div> */}
+</SigninRight>
 </div>
 
 

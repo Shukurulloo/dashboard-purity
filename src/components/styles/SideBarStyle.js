@@ -44,7 +44,8 @@ font-style: normal;
 font-weight: 700;
 line-height: 150%; /* 21px */
 margin-left: 15px;
-width: 174px;
+width: 180px;
+
 
 }
 h3{

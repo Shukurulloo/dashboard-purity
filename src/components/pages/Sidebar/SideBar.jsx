@@ -1,17 +1,17 @@
 import React from 'react'
 import {  SideBarstyle, SidebarFooter, Text, WrapIcon, WrapSidebar } from '../../styles/SideBarStyle'
-import creativeLogo from '../../assets/logo-creative-tim-blacksidebar.png'
 import Border from '../../border'
 import { Link } from 'react-router-dom'
 import {FaFile, FaHome, FaQuestionCircle, FaRocket, FaWrench} from 'react-icons/fa';
 import { BsCreditCard2BackFill, BsFillBarChartFill, BsFillPersonFill } from 'react-icons/bs';
+import Sidebarlogo from '../icons/Sidebarlogo';
 
 const SideBar = () => {
   return (
     <SideBarstyle>
 
         <WrapSidebar>
-            <img src={creativeLogo} alt=""  style={{marginLeft:'-10px'}}/>
+            <Sidebarlogo />
             <h1>PURITY UI DASHBOARD</h1> 
                 </WrapSidebar>
         <Border/>
