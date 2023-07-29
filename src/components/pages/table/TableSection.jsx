@@ -26,37 +26,37 @@ const TableSection = () => {
         <div className='wrabtab'><h4 >COMPLETION </h4></div>
         </Wraptable>
         <Wraptable >
-        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'20px'}}><TableIcon1/><h2>Chakra Soft UI Version</h2></div>
-        <div className='wrabtab'><img src={avatars1} alt="" /></div>
+        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'10px'}}><TableIcon1/><h2>Chakra Soft UI Version</h2></div>
+        <div className='wrabtab'><img src={avatars1} alt=""  style={{width: '74px',height: '23px'}}/></div>
         <div className='wrabtab'><h2>$14,000 </h2></div>
         <div className='wrabtab'><img src={percent60} alt="" /></div>
         </Wraptable>
         <Wraptable >
-        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'20px'}}><TableIcon02/><h2>Add Progress Track</h2></div>
-        <div className='wrabtab'><img src={avatars2} alt="" /></div>
+        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'10px'}}><TableIcon02/><h2>Add Progress Track</h2></div>
+        <div className='wrabtab'><img src={avatars2} alt="" style={{width: '74px',height: '23px'}}/></div>
         <div className='wrabtab'><h2>$3,000</h2></div>
         <div className='wrabtab'><img src={process10} alt="" /></div>
         </Wraptable>
         <Wraptable >
-        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'20px'}}><TableIcon3/><h2>Fix Platform Errors</h2></div>
-        <div className='wrabtab'><img src={avatars2} alt="" /></div>
+        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'10px'}}><TableIcon3/><h2>Fix Platform Errors</h2></div>
+        <div className='wrabtab'><img src={avatars2} alt="" style={{width: '74px',height: '23px'}} /></div>
         <div className='wrabtab'><h2>Not set </h2></div>
         <div className='wrabtab'><img src={progress100} alt="" /></div>
         </Wraptable>
         <Wraptable >
-        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'20px'}}><TableIcon4/><h2>Launch our Mobile App</h2></div>
-        <div className='wrabtab'><img src={avatars4} alt="" /></div>
+        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'10px'}}><TableIcon4/><h2>Launch our Mobile App</h2></div>
+        <div className='wrabtab'><img src={avatars4} alt="" style={{width: '74px',height: '23px'}}/></div>
         <div className='wrabtab'><h2>$32,000 </h2></div>
         <div className='wrabtab'><img src={progress100} alt="" /></div>
         </Wraptable>
         <Wraptable >
-        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'20px'}}><TableIcon5/><h2>Add the New Pricing Page</h2></div>
-        <div className='wrabtab'><img src={avatars1} alt="" /></div>
+        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'10px'}}><TableIcon5/><h2>Add the New Pricing Page</h2></div>
+        <div className='wrabtab'><img src={avatars1} alt="" style={{width: '74px',height: '23px'}}/></div>
         <div className='wrabtab'><h2>$400 </h2></div>
         <div className='wrabtab'><img src={progress25} alt="" /></div>
         </Wraptable> <Wraptable >
-        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'20px'}}><Tableicon6/><h2>Redesign New Online Shop</h2></div>
-        <div className='wrabtab'><img src={avatars2} alt="" /></div>
+        <div className='wrabtab' style={{flex:'2', justifyContent:'left', paddingLeft:'10px'}}><Tableicon6/><h2>Redesign New Online Shop</h2></div>
+        <div className='wrabtab'><img src={avatars2} alt="" style={{width: '74px',height: '23px'}}/></div>
         <div className='wrabtab'><h2>$7,600 </h2></div>
         <div className='wrabtab'><img src={progress40} alt="" /></div>
         </Wraptable>

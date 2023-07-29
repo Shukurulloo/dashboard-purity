@@ -6,7 +6,9 @@ display: flex;
 flex-direction: column;
 background-color: #F8F9FA;
 width: 100%;
+height: 90vmax;
 align-items: center;
+border: 1px solid red;
 `
 export const Title = styled.div`
 color:${({clr}) => clr || 'var(--gray-gray-700, #2D3748)'};
@@ -15,7 +17,7 @@ font-size: ${({fsize}) => fsize || '14px'};
 font-style: normal;
 font-weight: 700;
 line-height: 140%; /* 19.6px */
-margin:${({mg}) => mg || '-25px 30px 20px 30px'};   
+margin:${({mg}) => mg || '-25px 30px 20px 50px'};   
 
 `
 export const WrapDash = styled.div`
@@ -179,7 +181,7 @@ border-top-left-radius: 15px;
     display: flex;
     width: 100%;    
     justify-content: space-between;
-    padding:20px 15px 0 0;
+    padding:20px 15px 0 0px;
 }
 `
 export const WrapData = styled.div`

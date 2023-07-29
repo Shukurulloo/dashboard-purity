@@ -7,9 +7,29 @@ export const SideBarstyle = styled.div`
     flex-direction: column;
     border: 1px solid red;
     background-color: #F8F9FA;
-    width: 320px;
+
     align-items: center;
-    
+    h1{
+color: #2D3748;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 21px */
+width: 180px;
+
+
+}
+.sidebartitle{
+    display: flex ;
+margin-top: 14px;
+align-items: center;
+width: 219.5px;
+height: 54px;
+padding-left: 20px;
+flex-shrink: 0;
+cursor: pointer;
+}
     /* justify-content: center; */
 h5{
     color: var(--gray-gray-700, #2D3748);
@@ -34,7 +54,14 @@ flex-shrink: 0;
 /* background-color: ${({bg}) => bg || 'none'}; */
 border-radius: 15px;
 box-shadow:${({bxshd}) => bxshd || 'none'};
+cursor: pointer;
 
+&:hover{
+    border-radius: 15px;
+background: var(--black-amp-white-white, #FFF);
+box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px rgba(0, 0, 0, 0.02);
+
+}
 
 h1{
 color: #2D3748;
@@ -71,12 +98,15 @@ width:${({wd}) => wd || '30px'};
 height:${({ht}) => ht || '30px'};
 flex-shrink: 0;
 border-radius:${({bdrds}) => bdrds || '12px'};
-background:${({bg}) => bg || 'var(--teal-teal-300, #4FD1C5)' };
+background:${({bg}) => bg || '#4FD1C5' };
 display: flex;
 justify-content: center;
 align-items: center;
 margin-right:${({mgrht}) => mgrht || '0px'};
 
+/* &:hover{
+    background-color:#4FD1C5;
+} */
 img{
 color: white;
 }
@@ -90,6 +120,7 @@ font-weight: ${({fwt}) => fwt || '700'};
 line-height: 150%; /* 18px */
 padding-left:${({pdlft}) => pdlft || '15px'};
 text-decoration: none;
+cursor: pointer;
 `
 export const SidebarFooter = styled.div`
 width: 218px;
@@ -140,5 +171,10 @@ font-weight: 700;
 line-height: 150%; /* 15px */
 border: none;
 margin-left: 17px;
+
+&:hover{
+   
+    background-color: #e7e7e7; color: black;
+}
 }
 `

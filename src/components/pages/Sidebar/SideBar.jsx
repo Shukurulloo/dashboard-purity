@@ -10,18 +10,18 @@ const SideBar = () => {
   return (
     <SideBarstyle>
 
-        <WrapSidebar>
+          <div  className='sidebartitle'>
             <Sidebarlogo />
-            <h1>PURITY UI DASHBOARD</h1> 
-                </WrapSidebar>
+            <h1 style={{marginLeft:'10px'}}>PURITY UI DASHBOARD</h1> 
+            </div>
         <Border/>
 
-       <WrapSidebar bxshd='0px 3.500000238418579px 5.500000476837158px 0px rgba(0, 0, 0, 0.02);' style={{background: 'var(--black-amp-white-white, #FFF)'}}>
-            <WrapIcon style={{}}>
-            <FaHome style={{color:'white'}}/> 
+       <WrapSidebar >
+            <WrapIcon bg='var(--black-amp-white-white, #FFF)'>
+            <FaHome style={{color:'#4FD1C5'}}/> 
              {/* <img src={house} alt=""  /> */}
                  </WrapIcon>
-                  <Link to='/' style={{textDecoration:'none'}}><h3>Dashboard</h3></Link> 
+                  <Link to='/' style={{textDecoration:'none'}}><Text>Dashboard</Text> </Link> 
         </WrapSidebar>
       
 

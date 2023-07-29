@@ -24,6 +24,7 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: 150%;
+margin-left: 20px;
 }
 
 `

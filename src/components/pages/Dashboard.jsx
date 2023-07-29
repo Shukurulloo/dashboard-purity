@@ -1,4 +1,4 @@
-import React from 'react'
+  import React from 'react'
 import Navbar from './navbar/Navbar'
 import Footer from './footer/footer'
 import { ContainerDt, DivText, Flex, Grid, MidLeft, MidRight, MiniMid, Title,  WrapDash, WrapData, WrapImg, WrapMid, WrapMini, WrapMiniRight, WrapMinileft } from '../styles/DashboardStyle'
