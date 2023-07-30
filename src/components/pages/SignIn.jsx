@@ -32,7 +32,7 @@ const SignIn = () => {
 </SigninRight>
 </div>
 
-          <FooterStyle  style={{width:'100%' , background:'transparent'}}>
+         <FooterStyle  style={{width:'100%' , backgroundColor:'#fff'}}>
         <FooterLeft> 
             <p>@ 2021, Made with <span style={{color:'#4FD1C5'}}>❤️</span> by <span className='simmple'> Creative Tim</span> & <span className='simmple'>Simmmple</span> for a better web</p>
     </FooterLeft>
@@ -43,6 +43,7 @@ const SignIn = () => {
         <h3>License</h3>
     </FooterRight>
     </FooterStyle>
+
     </WrapSignIn>
   )
 }

@@ -3,9 +3,9 @@ import chakrabgImg from '../assets/signInImage.png'
 
 
 export const WrapSignIn = styled.div`
-  display: flex;
-  width: 100%;
-  flex-direction: column;
+display: flex;
+width: 100%;
+flex-direction: column;
 
 .wrapCont{
     display: flex;
