@@ -4,23 +4,26 @@ import Sidebarlogo from '../icons/Sidebarlogo'
 import { IoIosCube} from "react-icons/io";
 import { BsFillPersonFill } from 'react-icons/bs';
 import { FaKey } from 'react-icons/fa';
+import { CgProfile } from "react-icons/cg";
+import { Link } from 'react-router-dom';
 
 const SigninNavbar = () => {
   return (
     <WrapNavbar>
-    <div>
+    <div className='flex'>
     <Sidebarlogo />
     <h1>PURITY UI DASHBOARD</h1> 
     </div>
 
-    <div>
-        <h3><IoIosCube/> DASHBOARD</h3>
-        <h3><BsFillPersonFill style={{}}/> PROFILE</h3>
-        <h3><FaKey/> SIGN IN</h3>
+    <div className='navicons'>
+   <div  className='navicon'> <IoIosCube /> <Link to='/' style={{textDecoration:'none'}}><h3> DASHBOARD</h3></Link></div> 
+   <div className='navicon'><BsFillPersonFill /> <Link to='/profile' style={{textDecoration:'none'}}><h3> PROFILE</h3></Link></div> 
+   <div className='navicon' > <CgProfile /><Link to='/signup' style={{textDecoration:'none'}}><h3 style={{width:'45px'}}> SIGN UP</h3></Link></div> 
+   <div className='navicon'><FaKey /><Link to='/signin' style={{textDecoration:'none'}}><h3 style={{width:'45px'}}> SIGN IN</h3></Link></div> 
         <h3></h3>
     </div>
 
-    <div><ButtonSignin>Free Download</ButtonSignin></div>
+    <div className='flex' style={{justifyContent:'right'}}><ButtonSignin>Free Download</ButtonSignin></div>
     </WrapNavbar>
   )
 }
