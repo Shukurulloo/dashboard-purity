@@ -16,7 +16,7 @@ height: 70px;
 flex-shrink: 0;
 justify-content: space-around;
 margin-top:24px;
-margin-left: 36%;
+
 padding: 0 17px 0 17px;
 .navicons{
     flex: 2;

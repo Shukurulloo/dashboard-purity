@@ -3,15 +3,13 @@ import chakrabgImg from '../assets/signInImage.png'
 
 
 export const WrapSignIn = styled.div`
-display: flex;
-width: 100%;
-border: 1px solid black;
-flex-direction: column;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 
 .wrapCont{
     display: flex;
     width: 100%;
-    border: 1px solid black;
     padding-bottom:'140px'
 }
 
@@ -19,19 +17,15 @@ flex-direction: column;
 export const SigninLeft = styled.div`
     display: flex;
     flex: 1;
-    border: 1px solid black;
-   
     flex-direction: column;
-    border: 1px solid black;
  
  `
  export const SigninRight = styled.div`
     display: flex;
     flex: 1;
-    border: 1px solid red;
-   background-image: url(${chakrabgImg});
-   background-position: center;
-   background-size:cover;
+    background-image: url(${chakrabgImg});
+    background-position: center;
+    background-size:cover;
     height: 872px;
 
     border-radius: 0 0 0 20px;
@@ -87,7 +81,8 @@ padding:15px 0 0 70px;
 
   `
   export const SignInTitle = styled.div`
-    color: var(--teal-teal-300, #4FD1C5);
+  
+    color:${({cl}) => cl || '#4FD1C5'};
     text-align: left;
     font-family: Helvetica;
     font-size: 32px;
@@ -97,7 +92,8 @@ padding:15px 0 0 70px;
   
   `
     export const SignInText = styled.div`
-    color: var(--gray-gray-400, #A0AEC0);
+    
+    color:${({cl}) => cl || '#A0AEC0'};
     text-align: left;
     font-family: Helvetica;
     font-size: 14px;
@@ -105,5 +101,7 @@ padding:15px 0 0 70px;
     font-weight:${({fwht}) => fwht || '700;'};
     line-height: 140%; /* 19.6px */
     padding-top: 6px;
+    width: ${({wd}) => wd || ''};
+    text-align:${({ txaln}) => txaln || ''};
     
     `
