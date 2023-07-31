@@ -19,23 +19,11 @@ export const ContainerSignUp = styled.div`
 
 `
 
-export const WrapBg = styled.div`
-display: flex;
-    border: 1px solid red;
-   background-image: url(${Signupimg});
-   background-position:center;
-   background-size:contain;
-   background-position-y:top;
-   background-repeat:no-repeat;
-  border: 1px solid black;
-    flex: 1;
-    
-`
 export const WrapSignup = styled.div`
     display: flex;
     flex: 1;
     flex-direction: column;
-    margin-top:70px;
+    margin-top:55px;
     align-items: center;
   
     
@@ -57,7 +45,7 @@ h4{
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 19.6px */
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom:7px;
 }
 input{
@@ -89,6 +77,16 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%;
 padding:15px 0 0 70px;
+display: flex;
+
+h5{
+    color:#4FD1C5; 
+    font-weight: 700;
+    margin-left: 3px;
+&:hover{
+    color: #4fd1c497;
+}
+}
 
 }
 `
@@ -96,6 +94,8 @@ padding:15px 0 0 70px;
 export const Accaunts = styled.div`
 display: flex;
 flex-direction: column;
+justify-content: center;
+width: 100%;
 
 
 h1{
@@ -106,6 +106,7 @@ font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 140%; /* 25.2px */
+margin-bottom: 22px;
 }
 .platform{
     display: flex;
@@ -117,11 +118,11 @@ line-height: 140%; /* 25.2px */
     align-items: center;
     justify-content: center;
     width: 75px;
-height: 75px;
-flex-shrink: 0;
-border-radius: 15px;
-border: 1px solid var(--gray-gray-200, #E2E8F0);
-margin-left:20px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid var(--gray-gray-200, #E2E8F0);
+    margin-left:20px;
 
 
 &:hover{
@@ -130,5 +131,55 @@ margin-left:20px;
 }
 `
 
-// export const ContainerSignUp = styled.div`
-// `
+export const Checkbox = styled.div`
+width: 100%;
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: left;
+padding: 5px 0;
+margin: 20px 0;
+
+label{
+background-color: #d2d2d2;
+width: 36px;
+height: 18px;
+border-radius:200px;
+cursor: pointer; 
+margin-top:-1px;
+position: relative;
+}
+label::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 13.5px;
+    height: 13.5px;
+    border-radius: 200px;
+    margin: 3px;
+    transition: 0.2s;
+}
+
+input:checked + label {
+    background-color: #4FD1C5;
+  }
+
+  input:checked + label::before {
+    transform: translateX(17px);
+    background-color: #fff;
+  }
+input{
+    width:7px;
+    height:4px;
+    display: none;
+}
+h2{
+    color: var(--gray-gray-700, #2D3748);
+    font-family: Helvetica;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    margin-left: 6px;
+}
+`

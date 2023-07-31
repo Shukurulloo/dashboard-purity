@@ -4,6 +4,7 @@ import { SignInText, SignInTitle, SigninLeft, SigninRight, WrapSignIn, WrapperSi
 import SigninNavbar from './signInNavbar/SigninNavbar'
 import { ButtonSignin } from '../styles/SigninNavbar'
 import { Link } from 'react-router-dom'
+import { Checkbox } from '../styles/SignupStyle'
 
 const SignIn = () => {
   return (
@@ -19,11 +20,13 @@ const SignIn = () => {
   <h4>Password</h4>
   <input type="text" placeholder='Your password'  />
 
-  <div class="checkbox">
-      <label><input type="checkbox" name="remember-me" formControlName="remember"/>Remember me</label>
-    </div>
+  <Checkbox>
+      <input type="checkbox" id='check' />
+      <label for="check" style={{ paddingBottom:'19px'}}></label>
+      <h2>Remember me </h2>
+    </Checkbox>
     <ButtonSignin wd='350px' bg='#4FD1C5' ht='45px' bdrs='15px'>SIGN IN</ButtonSignin>
-    <p>Don't have an account? <Link to='/signup' style={{textDecoration:'none', color:'#4FD1C5', fontWeight: '700'}}>Sign up </Link> </p>
+    <p>Don't have an account? <Link to='/signup' style={{textDecoration:'none'}}> <h5>Sign up</h5>  </Link> </p>
   </WrapperSignin>
   </SigninLeft>
 <SigninRight>
@@ -32,11 +35,11 @@ const SignIn = () => {
 </SigninRight>
 </div>
 
-         <FooterStyle  style={{width:'100%' , backgroundColor:'#fff'}}>
-        <FooterLeft> 
+         <FooterStyle  style={{width:'100%' , backgroundColor:'#fff', }}>
+        <FooterLeft style={{justifyContent:'right',paddingRight:'200px'}}> 
             <p>@ 2021, Made with <span style={{color:'#4FD1C5'}}>❤️</span> by <span className='simmple'> Creative Tim</span> & <span className='simmple'>Simmmple</span> for a better web</p>
     </FooterLeft>
-    <FooterRight style={{paddingRight:'100px'}}>
+    <FooterRight style={{paddingRight:'100px',justifyContent:'center'}}>
         <h3>Creative Tim</h3>
         <h3>Simmmple</h3>
         <h3>Blog</h3>

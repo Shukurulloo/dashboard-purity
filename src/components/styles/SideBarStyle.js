@@ -5,18 +5,17 @@ import styled from "styled-components"
 export const SideBarstyle = styled.div`
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     background-color: #F8F9FA;
 
     align-items: center;
     h1{
-color: #2D3748;
-font-family: Helvetica;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%; /* 21px */
-width: 180px;
+    color: #2D3748;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    width: 180px;
 
 
 }

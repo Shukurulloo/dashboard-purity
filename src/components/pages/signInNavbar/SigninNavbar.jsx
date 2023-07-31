@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const SigninNavbar = () => {
   return (
-    <WrapNavbar style={{marginLeft: '36%'}}>
+    <WrapNavbar style={{marginLeft: '36%', backdropFilter: 'blur(10.500000953674316px)', boxShadow: '0px 7.000000476837158px 23.000001907348633px 0px rgba(0, 0, 0, 0.05)'}}>
     <div className='flex'>
     <Sidebarlogo />
     <h1>PURITY UI DASHBOARD</h1> 

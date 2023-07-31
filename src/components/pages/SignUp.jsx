@@ -1,13 +1,12 @@
 import React from 'react'
 import Footer from './footer/footer'
 import { ButtonSignin, WrapNavbar } from '../styles/SigninNavbar'
-import Sidebarlogo from './icons/Sidebarlogo'
 import { IoIosCube } from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { CgProfile } from 'react-icons/cg'
 import { FaKey } from 'react-icons/fa'
-import { Accaunts, ContainerSignUp, WrapBg, WrapSignup, WrapperSignUp } from '../styles/SignupStyle'
+import { Accaunts, Checkbox, ContainerSignUp, WrapSignup, WrapperSignUp } from '../styles/SignupStyle'
 import { SignInText, SignInTitle, WrapperSignin } from '../styles/SignInStyle'
 import { BsFacebook } from "react-icons/bs";
 import { AiFillApple } from "react-icons/ai";
@@ -19,9 +18,8 @@ import { FooterLeft, FooterRight, FooterStyle } from '../styles/FooterStyle'
 function SignUp() {
   return (
     <ContainerSignUp>
-      {/* <WrapBg> */}
         
-<WrapNavbar style={{marginLeft: '0%;', width:'70%',background:'none', border:'none'}} >
+<WrapNavbar bg="transparent" style={{marginLeft: '0%;', width:'57%',border:'none'}} >
     <div className='flex' style={{color:'#fff'}}>
     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
       <path d="M20.8795 0H1.1219C0.502293 0 0 0.502293 0 1.1219V10.5297C0 11.1493 0.502293 11.6516 1.1219 11.6516H5.17558V20.8795C5.17522 21.1769 5.29311 21.4623 5.50329 21.6727C5.71347 21.8831 5.99869 22.0014 6.29611 22.0014H15.7039C16.3235 22.0014 16.8258 21.4991 16.8258 20.8795V11.6557H20.8795C21.1769 11.6557 21.4621 11.5375 21.6723 11.327C21.8825 11.1166 22.0004 10.8312 22 10.5338V1.1219C22.0004 0.824482 21.8825 0.539118 21.6723 0.328681C21.4621 0.118244 21.1769 0 20.8795 0ZM1.30042 1.30179H10.3498V10.3512H1.30042V1.30179ZM15.5254 20.701H6.476V11.6557H15.5254V20.701ZM20.6996 10.3512H11.6502V1.30179H20.6996V10.3512Z" fill="white"/>
@@ -55,31 +53,34 @@ function SignUp() {
       <Accaunts>
         <h1>Register with</h1>
         <div className='platform'>
-          <div className='Icons'><BsFacebook style={{width:'31px',height:'31px'}}/></div>
+          <div className='Icons'style={{  marginLeft:'0px'}}><BsFacebook style={{width:'28px',height:'28px'}}/></div>
           <div className='Icons'><AiFillApple style={{width:'31px',height:'31px'}}/></div>
           <div className='Icons'><BiLogoGoogle style={{width:'31px',height:'31px'}}/></div>
         </div>
+        <h1 style={{color:'#A0AEC0',margin: '10px 0 -20px 0'}}>or</h1>
       </Accaunts>
     <h4 style={{marginTop: '55px'}}>Name</h4>
   <input type="text" placeholder='Your full name' />
   <h4 style={{marginTop: '20px'}}>Email</h4>
-  <input type="text" placeholder='Your email address' />
+  <input type="email" placeholder='Your email address' />
   <h4 style={{marginTop: '20px'}}>Password</h4>
-  <input type="text" placeholder='Your password'  />
+  <input type="password" placeholder='Your password'  />
 
-  <div class="checkbox">
-      <label><input type="checkbox" name="remember-me" formControlName="remember"/>Remember me</label>
-    </div>
+  <Checkbox>
+      <input type="checkbox" id='check' style={{}}/>
+      <label for="check" ></label>
+      <h2>Remember me </h2>
+    </Checkbox>
     <ButtonSignin wd='350px' bg='#4FD1C5' ht='45px' bdrs='15px'>SIGN IN</ButtonSignin>
-    <p>Already have an account? <Link to='/signin' style={{textDecoration:'none', color:'#4FD1C5', fontWeight: '700'}}>Sign in </Link> </p>
+    <p >Already have an account? <Link to='/signin' className='link' style={{textDecoration:'none'}}> <h5> Sign in</h5> </Link> </p>
   </WrapperSignUp>
     </WrapSignup>
 
     <FooterStyle  style={{width:'100%' , backgroundColor:'#fff'}}>
-        <FooterLeft> 
+        <FooterLeft style={{justifyContent:'center'}}> 
             <p>@ 2021, Made with <span style={{color:'#4FD1C5'}}>❤️</span> by <span className='simmple'> Creative Tim</span> & <span className='simmple'>Simmmple</span> for a better web</p>
     </FooterLeft>
-    <FooterRight style={{paddingRight:'100px'}}>
+    <FooterRight style={{justifyContent:'center'}}>
         <h3>Creative Tim</h3>
         <h3>Simmmple</h3>
         <h3>Blog</h3>

@@ -47,6 +47,10 @@ font-style: normal;
 font-weight: 400;
 line-height: 150%; /* 18px */
 padding-right: 50px;
+cursor: pointer;
+&:hover{
+color: #a0aec093;
+}
 }
 
 `

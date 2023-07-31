@@ -57,17 +57,8 @@ input{
     border: 1px solid var(--gray-gray-200, #E2E8F0);
     background: var(--black-amp-white-white, #FFF);
 }
-.checkbox{ margin-bottom:20px}
-label{
-  display: flex;
-  align-items: center;
-  margin-top:10px;
-input{
-  width: 20px;
-  margin-right: 5px;
-}
 
-}
+
 p{
   color: #A0AEC0;
 font-family: Helvetica;
@@ -76,7 +67,16 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%;
 padding:15px 0 0 70px;
+display: flex;
 
+}
+h5{
+  font-weight:700;
+  color:#4FD1C5;
+  margin-left: 3px;
+&:hover{
+    color: #4fd1c497;
+}
 }
 
   `

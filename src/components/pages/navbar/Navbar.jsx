@@ -18,7 +18,7 @@ const Navbar = () => {
         </WrapInput>
 
         <FaUserTie style={{color:'#718096',marginLeft:'20px'}}/>
-        <Link to='signin' style={{textDecoration:'none'}}><p>Sign In</p></Link>
+        <Link to='/signin' style={{textDecoration:'none'}}><p>Sign In</p></Link>
 
         <FaRegSun style={{color:'#718096',margin:'0px 23px 0px 0px'}}/>
 
